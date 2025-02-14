@@ -1,0 +1,21 @@
+Задача: решение
+
+Открыть домашнюю директорию через терминал: cd
+Определить имя папки, в которой вы находитесь: pwd
+Создать внутри этой папки каталог с именем test1: mkdir test1
+Перейти в папку test1: cd test1
+Создать файл 1,2 и 3 внутри каталога test1: touch file1.txt file2.txt file3.txt
+Проверить содержимое каталога test1: ls -l
+Перейти в домашнюю директорию: cd ~
+Создать папку test2 внутри домашней директории: mkdir test2
+Удалить папку test2: rmdir test2
+Удалить файл 2 из папки test1: cd test1, rm file2.txt или rm ~/test1/file2.txt
+Создать папку в домашней директории test3 и добавить в нее два файла: cd ~, mkdir test3, cd test3, touch file1.txt file2.txt или mkdir ~/test3, touch ~/test3/file1.txt ~/test3/file2.txt
+Удалить папку test3: rm -r ~/test3
+Создать папку test4 в домашней директории: mkdir ~/test4
+Переместить файлы 1 и 3 из папки test1 в папку test4: mv ~/test1/file1.txt ~/test1/file3.txt ~/test4
+Добавить в файл 1 три строки со словами line: echo line1 >> ~/test4/file1.txt, echo line2 >> ~/test4/file1.txt, echo line3 >> ~/test4/file1.txt
+Посмотреть содержимое файла 1: cat ~/test4/file1.txt
+Добавьте в файл 3 три строки со словами line: echo line4 >> ~/test4/file3.txt, echo line5 >> ~/test4/file3.txt, echo line6 >> ~/test4/file3.txt
+Просмотрите содержимое двух файлов (1 и 3) сразу: cat ~/test4/file1.txt ~/test4/file3.txt
+Используя один из редакторов замените все строки в файле 1: vim ~/test4/file1.txt, change lines, esc :wq или nano ~/test4/file1.txt, change lines, ctrl X
